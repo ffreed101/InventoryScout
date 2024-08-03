@@ -7,6 +7,24 @@
     <title>InventoryScout</title>
 </head>
 <body>
-    
+    <header>
+        <h1>InventoryScout</h1>
+        <p>Developed by Falon Freed</p>
+    </header>
+    <form>
+        <!-- used to identify the item table to pull data from -->
+        <label for="item-num">Item No.</label><br>
+        <input type="text" id="item-num" name="item-num" placeholder="00000" required><br><br>
+
+        <!-- helps define weight limits to create pull plan -->
+        <label for="order-pcs">Order Piece Count</label><br>
+        <input type="text" id="order-pcs" name="order-pcs" placeholder="0" required><br><br>
+        
+        <!-- helps define weight limits to create pull plan -->
+        <label for="order-weight-limit">Order Weight Limit</label><br>
+        <input type="text" id="order-weight-limit" name="order-weight-limit" placeholder="0.00 lb" required><br><br>
+
+        <button name="submit" type="submit">Submit</button>
+    </form>
 </body>
 </html>
